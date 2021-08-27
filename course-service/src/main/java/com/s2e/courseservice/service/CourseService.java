@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
+import java.util.Optional;
 
 @Service
 @Slf4j
@@ -25,4 +26,8 @@ public class CourseService {
         return courseRepository.save(course);
     }
 
+    public Optional<Course> findCourseById(int id) {
+
+        return courseRepository.findById(id);
+    }
 }

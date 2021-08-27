@@ -25,6 +25,7 @@ public class StudentService {
     }
 
     public Optional<Student> findStudentById(int id) {
+        log.info("Inside findStudentById method of StudentService");
         return studentRepository.findById(id);
     }
 }
