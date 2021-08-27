@@ -21,5 +21,4 @@ public class Course {
     private String name;
     private String description;
     private int credits;
-    private HashSet<Integer> student;
 }
